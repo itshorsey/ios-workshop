@@ -6,9 +6,9 @@
 //  Copyright (c) 2013 Instrument Marketing, Inc. All rights reserved.
 //
 
-#import "INAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation INAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
