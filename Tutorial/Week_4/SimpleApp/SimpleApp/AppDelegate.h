@@ -10,6 +10,26 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (strong, nonatomic) UIWindow *window;
+// static types
+// do NOT use pointers
+// @property (nonatomic, assign)
+
+// BOOL, NSInteger, CGFloat
+
+
+
+
+
+
+// dynamic types
+// ALWAYS use pointers
+// @property (nonatomic, strong)
+// @property (nonatomic, weak) <-- only sometimes
+
+// NSArray, NSDate, NSNumber, NSDictionary, NSTimer
+
+
+
+@property (nonatomic, strong) NSArray *publicArray;
 
 @end
