@@ -14,8 +14,8 @@
 		35352B2A1857B93000ED33EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35352B291857B93000ED33EA /* main.m */; };
 		35352B2E1857B93000ED33EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35352B2D1857B93000ED33EA /* AppDelegate.m */; };
 		35352B341857B93000ED33EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35352B331857B93000ED33EA /* ViewController.m */; };
+		35B00CC7187C6EAD00C2745E /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B00CC6187C6EAD00C2745E /* CircleView.m */; };
 		35BC4B6A1861252A006FB34E /* Flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BC4B691861252A006FB34E /* Flower.png */; };
-		35BC4B6D186127E2006FB34E /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BC4B6C186127E2006FB34E /* CircleView.m */; };
 		35BC4B6F18620C47006FB34E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BC4B6E18620C47006FB34E /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +33,9 @@
 		35352B321857B93000ED33EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		35352B331857B93000ED33EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		35352B3C1857B93000ED33EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		35B00CC5187C6EAD00C2745E /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
+		35B00CC6187C6EAD00C2745E /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		35BC4B691861252A006FB34E /* Flower.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Flower.png; sourceTree = "<group>"; };
-		35BC4B6B186127E2006FB34E /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CircleView.h; path = ../../BasicViews/SimpleApp/CircleView.h; sourceTree = "<group>"; };
-		35BC4B6C186127E2006FB34E /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CircleView.m; path = ../../BasicViews/SimpleApp/CircleView.m; sourceTree = "<group>"; };
 		35BC4B6E18620C47006FB34E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,8 +91,8 @@
 				35352B331857B93000ED33EA /* ViewController.m */,
 				35BC4B691861252A006FB34E /* Flower.png */,
 				35BC4B6E18620C47006FB34E /* Default-568h@2x.png */,
-				35BC4B6B186127E2006FB34E /* CircleView.h */,
-				35BC4B6C186127E2006FB34E /* CircleView.m */,
+				35B00CC5187C6EAD00C2745E /* CircleView.h */,
+				35B00CC6187C6EAD00C2745E /* CircleView.m */,
 			);
 			name = Classes;
 			path = SimpleApp;
@@ -176,7 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35BC4B6D186127E2006FB34E /* CircleView.m in Sources */,
+				35B00CC7187C6EAD00C2745E /* CircleView.m in Sources */,
 				35352B2A1857B93000ED33EA /* main.m in Sources */,
 				35352B2E1857B93000ED33EA /* AppDelegate.m in Sources */,
 				35352B341857B93000ED33EA /* ViewController.m in Sources */,
