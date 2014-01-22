@@ -13,11 +13,12 @@
 		35352B281857B93000ED33EA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 35352B261857B93000ED33EA /* InfoPlist.strings */; };
 		35352B2A1857B93000ED33EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35352B291857B93000ED33EA /* main.m */; };
 		35352B2E1857B93000ED33EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35352B2D1857B93000ED33EA /* AppDelegate.m */; };
-		35352B341857B93000ED33EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35352B331857B93000ED33EA /* ViewController.m */; };
+		35352B341857B93000ED33EA /* FlowerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35352B331857B93000ED33EA /* FlowerViewController.m */; };
 		35B00CC7187C6EAD00C2745E /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B00CC6187C6EAD00C2745E /* CircleView.m */; };
 		35BC4B6A1861252A006FB34E /* Flower.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BC4B691861252A006FB34E /* Flower.png */; };
 		35BC4B6F18620C47006FB34E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 35BC4B6E18620C47006FB34E /* Default-568h@2x.png */; };
 		35BE6B0318860CE8004E4F8A /* FlowerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BE6B0218860CE8004E4F8A /* FlowerView.m */; };
+		35E9BE19188F48AF00760576 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35E9BE18188F48AF00760576 /* PictureViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +32,8 @@
 		35352B2B1857B93000ED33EA /* SimpleApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleApp-Prefix.pch"; sourceTree = "<group>"; };
 		35352B2C1857B93000ED33EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		35352B2D1857B93000ED33EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		35352B321857B93000ED33EA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		35352B331857B93000ED33EA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		35352B321857B93000ED33EA /* FlowerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerViewController.h; sourceTree = "<group>"; };
+		35352B331857B93000ED33EA /* FlowerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerViewController.m; sourceTree = "<group>"; };
 		35352B3C1857B93000ED33EA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		35B00CC5187C6EAD00C2745E /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
 		35B00CC6187C6EAD00C2745E /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
@@ -40,6 +41,8 @@
 		35BC4B6E18620C47006FB34E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		35BE6B0118860CE8004E4F8A /* FlowerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowerView.h; sourceTree = "<group>"; };
 		35BE6B0218860CE8004E4F8A /* FlowerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowerView.m; sourceTree = "<group>"; };
+		35E9BE17188F48AF00760576 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		35E9BE18188F48AF00760576 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				35352B231857B93000ED33EA /* Classes */,
+				35E9BE1B188F4A2100760576 /* Resources */,
 				35352B241857B93000ED33EA /* Supporting Files */,
 				35352B1C1857B93000ED33EA /* Frameworks */,
 				35352B1B1857B93000ED33EA /* Products */,
@@ -90,14 +94,8 @@
 			children = (
 				35352B2C1857B93000ED33EA /* AppDelegate.h */,
 				35352B2D1857B93000ED33EA /* AppDelegate.m */,
-				35BE6B0118860CE8004E4F8A /* FlowerView.h */,
-				35BE6B0218860CE8004E4F8A /* FlowerView.m */,
-				35352B321857B93000ED33EA /* ViewController.h */,
-				35352B331857B93000ED33EA /* ViewController.m */,
-				35BC4B691861252A006FB34E /* Flower.png */,
-				35BC4B6E18620C47006FB34E /* Default-568h@2x.png */,
-				35B00CC5187C6EAD00C2745E /* CircleView.h */,
-				35B00CC6187C6EAD00C2745E /* CircleView.m */,
+				35E9BE1A188F4A1600760576 /* Views */,
+				35E9BE1C188F4A2B00760576 /* ViewControllers */,
 			);
 			name = Classes;
 			path = SimpleApp;
@@ -113,6 +111,38 @@
 			);
 			name = "Supporting Files";
 			path = SimpleApp;
+			sourceTree = "<group>";
+		};
+		35E9BE1A188F4A1600760576 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				35BE6B0118860CE8004E4F8A /* FlowerView.h */,
+				35BE6B0218860CE8004E4F8A /* FlowerView.m */,
+				35B00CC5187C6EAD00C2745E /* CircleView.h */,
+				35B00CC6187C6EAD00C2745E /* CircleView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		35E9BE1B188F4A2100760576 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35BC4B691861252A006FB34E /* Flower.png */,
+				35BC4B6E18620C47006FB34E /* Default-568h@2x.png */,
+			);
+			name = Resources;
+			path = SimpleApp;
+			sourceTree = "<group>";
+		};
+		35E9BE1C188F4A2B00760576 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				35352B321857B93000ED33EA /* FlowerViewController.h */,
+				35352B331857B93000ED33EA /* FlowerViewController.m */,
+				35E9BE17188F48AF00760576 /* PictureViewController.h */,
+				35E9BE18188F48AF00760576 /* PictureViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,10 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				35B00CC7187C6EAD00C2745E /* CircleView.m in Sources */,
+				35E9BE19188F48AF00760576 /* PictureViewController.m in Sources */,
 				35352B2A1857B93000ED33EA /* main.m in Sources */,
 				35352B2E1857B93000ED33EA /* AppDelegate.m in Sources */,
 				35BE6B0318860CE8004E4F8A /* FlowerView.m in Sources */,
-				35352B341857B93000ED33EA /* ViewController.m in Sources */,
+				35352B341857B93000ED33EA /* FlowerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

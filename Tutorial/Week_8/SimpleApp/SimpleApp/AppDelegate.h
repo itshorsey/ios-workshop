@@ -11,4 +11,7 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 + (AppDelegate *)delegate;
+
+- (void)showPictureViewController;
+- (void)showFlowerViewController;
 @end

@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "FlowerView.h"
+#import "FlowerViewController.h"
+#import "PictureViewController.h"
 
 @interface AppDelegate()
 @end
@@ -17,20 +18,23 @@
 @implementation AppDelegate
 {
     UIWindow *window;
-
 }
 
 #pragma mark - UIApplicationDelegate
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL)application:(UIApplication *)application
+                didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
     CGRect rect = [UIScreen mainScreen].bounds;
     window = [[UIWindow alloc] initWithFrame:rect];
-    
-    
+
     window.backgroundColor = [UIColor whiteColor];
     
-    [self showFlower];
+
+    
+    FlowerViewController *viewController = [[FlowerViewController alloc] init];
+    
+    window.rootViewController = viewController;
     
     
     [window makeKeyAndVisible];
@@ -40,23 +44,23 @@
 }
 #pragma mark -
 
-- (void)showFlower
-{
-    FlowerView *flower = [[FlowerView alloc] init];
-    
-    flower.petalCount = 12;
-    flower.petalColor = [UIColor redColor];
-    
-    flower.frame = CGRectMake(window.frame.size.width/2.0f-flower.frame.size.width/2.0f,
-                              window.frame.size.height/2.0f-flower.frame.size.height/2.0f,
-                              flower.frame.size.width, flower.frame.size.height);
-    
-    [window addSubview:flower];
-}
+
 
 + (AppDelegate *)delegate
 {
     return (AppDelegate *)[UIApplication sharedApplication].delegate;
+}
+
+- (void)showPictureViewController
+{
+    PictureViewController *newViewController = [[PictureViewController alloc] init];
+    window.rootViewController = newViewController;
+}
+
+- (void)showFlowerViewController
+{
+    FlowerViewController *newViewController = [[FlowerViewController alloc] init];
+    window.rootViewController = newViewController;
 }
 
 @end
