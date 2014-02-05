@@ -16,6 +16,7 @@
 {
     
     // private instance variables go here
+    NSArray *list;
 }
 
 - (id)init
@@ -23,6 +24,12 @@
     if (self = [super init]) {
         UITabBarItem *item = [[UITabBarItem alloc] initWithTitle:@"Two" image:[UIImage imageNamed:@"drawer.png"] selectedImage:nil];
         self.tabBarItem = item;
+        
+        NSMutableArray *fillList = [[NSMutableArray alloc] init];
+        for (NSUInteger i = 0; i < 100; i++) {
+            [fillList addObject:[NSString stringWithFormat:@"%lu", (unsigned long)i]];
+        }
+        list = [[NSArray alloc] initWithArray:fillList];
     }
     return self;
 }
@@ -56,9 +63,16 @@
 }
 
 #pragma mark - UITableViewDelegate
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView
+didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView
+           editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
 }
 #pragma mark -
 
@@ -66,17 +80,25 @@
 #pragma mark UITableViewDatasource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 100;
+    return [list count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
     
-    cell.textLabel.text = @"Hello #2";
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                      reuseIdentifier:@"cell"];
+        
+        cell.editing = YES;
+    }
+
+    
+    cell.textLabel.text = list[indexPath.row];
+    
     
     return cell;
 }
